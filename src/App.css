@@ -46,15 +46,26 @@
 .display-flex {
   display: flex;
 }
-.flex-dricetion-row {
-  flex-direction: row;
-}
-.flex-dricetion-column {
+
+.flex-direction-column {
   flex-direction: column;
 }
 .gap-1rem {
   gap: 1rem;
 }
+
+.gap-3rem {
+  gap: 3rem;
+}
+
+.gap-4rem {
+  gap: 4rem;
+}
+
+.gap-9rem {
+  gap: 9rem;
+}
+
 .gap-10rem {
   gap: 10rem;
 }
@@ -65,8 +76,28 @@
   align-items: center;
 }
 .justify-content-sb {
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .wrap {
   flex-wrap: wrap;
 }
+
+.width-100{
+  width : 100%;
+} 
+
+.align-items-end{
+  align-items: end;
+}
+
+.justify-content-end{
+justify-content:flex-end;
+}
+
+
+
+
+
+
+
+
