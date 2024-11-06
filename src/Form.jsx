@@ -2,9 +2,10 @@ import React from 'react'
 import './index.css'
 const boyutlar = ['Küçük', 'Orta', 'Büyük']; 
 const hamurlar = ['İnce', 'Orta', 'Kalın'];
+const malzemeler = ['Pepperoni','Tavuk Izgara', 'Mısır', 'Sarımsak' , 'Ananas', 'Sosis', 'Soğan', 'Sucuk', 'Biber' , 'Kabak', 'Kanada Jambonu', 'Domates', 'Jalepeno', 'Sucuk'];
 function Form() {
     return (
-        <div className='display-flex justify-content align-items text-content gap-10rem'>
+        <div className='display-flex justify-content align-items text-content gap-10rem flex-direction-column'>
             <div className="font-barlow color-black max-width">
                 <div className='display-flex flex-direction-column'>
                     <h2>Position Absolute Acı Pizza</h2>
@@ -44,8 +45,26 @@ function Form() {
                         </select>
                     </div>
                 </div>
-            </div>
+                </div>
+                <div className='display-flex flex-direction-column max-width-35rem gap-3rem margin-0-auto'> {/* Ek Malzemeler */}
+        <div className='display-flex flex-direction-column gap-1rem'>
+          <h2>Ek Malzemeler</h2>
+          <p>En Fazla 10 malzeme seçebilirsiniz. 5₺</p>
         </div>
-    )
+        <div className='display-flex justify-content-sb gap-1-5rem wrap'>
+        {malzemeler.map((malzeme,ind) => {
+          return (
+          <label key={ind} className='flex-basis-9rem'>
+            <input type="checkbox" checked='' />
+            {malzeme}
+          </label>
+          )
+        })}
+          <label className='flex-basis-9rem'>
+          </label>
+        </div>
+      </div>
+    </div>
+  )
 }
 export default Form
