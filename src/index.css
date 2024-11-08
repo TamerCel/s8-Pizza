@@ -8,6 +8,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --headerColor:#CE2829;
+  --headerColor: #CE2829;
+  --buttonColor: #FDC913;
 }
-
